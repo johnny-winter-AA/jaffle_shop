@@ -1,1 +1,1 @@
-SELECT * FROM {{ ref('orders') }}
+SELECT * FROM {{ ref('fct_orders') }}

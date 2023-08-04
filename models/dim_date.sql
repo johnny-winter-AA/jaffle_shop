@@ -5,7 +5,7 @@ WITH DateRange AS (
         CAST(CONCAT(YEAR(MIN(order_date)), '-01-01') AS DATE) AS StartDate, /* should always start on 1st January */
         CAST(CONCAT(YEAR(MAX(order_date)), '-12-31') AS DATE) AS EndDate /* should always end on 31st December*/
     FROM 
-        {{ ref('orders') }}
+        {{ ref('fct_orders') }}
 ),
 
 /* query to generate dates between given start date and end date */

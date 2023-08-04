@@ -5,9 +5,9 @@ jaffle_shop:
   outputs:    
     fabric-dev:
       authentication: auto
-      database: dbt_jaffle_shop
+      database: jaffle_shop
       driver: ODBC Driver 18 for SQL Server
-      host: 3v4cy3mfd7fuzgxdzvpkdtfdme-f44zlkwse5yu5nfku6imlxta34.datawarehouse.pbidedicated.windows.net
-      schema: dbt_test
+      host: 3v4cy3mfd7fuzgxdzvpkdtfdme-ntjxya4umqzehojgo6rsy7iczq.datawarehouse.pbidedicated.windows.net
+      schema: fabric
       threads: 4
       type: fabric

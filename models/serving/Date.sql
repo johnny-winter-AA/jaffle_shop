@@ -1,1 +1,1 @@
-SELECT * FROM {{ ref('date') }}
+SELECT * FROM {{ ref('dim_date') }}
