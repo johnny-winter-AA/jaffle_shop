@@ -26,3 +26,6 @@ models:
       staging:
         +schema: staging
         materialized: view
+      serving:
+        +schema: serving
+        materialized: view

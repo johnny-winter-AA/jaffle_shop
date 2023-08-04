@@ -11,12 +11,12 @@ WITH DateRange AS (
 /* query to generate dates between given start date and end date */
 Calendar AS (
 SELECT
-    DATEADD(DAY, r.generated_number, dr.StartDate ) AS Date
+    DATEADD(DAY, r.generated_number-1, dr.StartDate ) AS Date
 FROM
      {{ ref('stg_numberseries10k') }} r
     CROSS JOIN DateRange dr
 WHERE
-    DATEADD(DAY, r.generated_number, dr.StartDate ) <= dr.EndDate
+    DATEADD(DAY, r.generated_number-1, dr.StartDate ) <= dr.EndDate
 )
 
 /* date table query */
